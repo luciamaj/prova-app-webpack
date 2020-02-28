@@ -1,0 +1,562 @@
+$success: rgb(47, 155, 54);
+$warning:  rgb(255, 147, 24);
+$danger: rgb(210, 74, 63);
+$off: rgb(97, 96, 96);
+$primary: rgb(0, 0, 0);
+$background: rgb(255, 255, 255);
+$area:rgba(231, 231, 231, 0.925);
+
+$spacer-width: 40px;
+
+body {
+    color: $primary
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color $primary;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 15px 0;
+    opacity:0.3;
+
+}
+
+p {
+    font-size: 1.2rem;
+    
+}
+
+
+.success {
+    background-color: $success;
+}
+
+.warning {
+    background-color: $warning;
+}
+
+.danger {
+    background-color: $danger;
+}
+
+.container {
+    max-width: 1500px;
+    margin-top: $spacer-width;
+    min-height: 600px;
+}
+
+.warning-message {
+    display: none;
+}
+
+.jumbotron{
+
+    padding: 2rem 2rem;
+}
+
+.spacer {
+    margin-top: $spacer-width;
+    margin-bottom: $spacer-width;
+}
+
+.centered {
+    text-align: center;
+}
+
+.no-borders {
+    padding: 0 !important;
+}
+
+.boxes-container {
+    margin: 0 40px 0 40px;
+}
+
+.square {
+    margin: 4px 4px 4px 4px;
+    width: 11vw;
+    height: 11vw;
+}
+
+.flag{
+    padding: 0 !important;
+    text-align: center;
+}
+
+.sale-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+
+.strike-title {
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.strike-title.background {
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 2px solid #8f8f8f !important;
+        content:"";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    span { 
+        background: $background; 
+        padding: 0 15px; 
+    }
+}
+
+.generalControl{
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+
+.sala-name{
+
+    margin-bottom: 30px;
+  
+}
+
+
+
+.sala{
+    
+    border-radius: 0px 0px 20px 20px;
+    padding: 30px 5px; 
+    width: 100%;
+    min-height: fit-content;
+    max-height: 600px;
+}
+
+#content-side {
+    border-radius: 20px;
+    padding:20px 25px;
+    margin-top: 2em;
+   background-color: rgba(170, 170, 170, 0.432);
+} 
+
+
+
+.aree {
+    min-height:600px ;
+    height: fit-content;
+    text-align: left;
+    padding: 30px 0; 
+
+    p {
+        padding-left: 40px;
+    }
+}
+
+.state {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.success-text {
+    color: $success;
+}
+
+.warning-text {
+    color: $warning;
+}
+
+.on {
+    background-color: $success;
+}
+
+.warning {
+    background-color: $warning;
+}
+
+.off {
+    background-color: $off;
+}
+
+.tab {
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+.commands {
+    display: block;
+    min-height: 80px;
+    text-align: center;
+    margin-bottom: 1.5em;
+   
+
+    .btn {
+        width: 90%;
+        margin-bottom:1em;
+       
+        font-size: 1.2em;
+    }
+}
+
+
+#machControl {
+    font-weight: bold;
+}
+
+.machines{
+    width: 100%;
+   text-align: center;
+
+    .card{
+        border: none;
+        width:12rem;
+        min-height: fit-content;
+        
+        padding: 0px;
+    }
+    .card-body{
+        color: $background;
+        padding: 0px;
+        border-radius: 8px;
+    }
+    .card-title{
+        margin: 0;
+    }
+ 
+}
+
+#operazioni{
+
+   display: block;
+}
+
+#app{
+    padding-top: 20px;
+}
+
+.appList{
+    width: 90%;
+    margin:auto;
+    margin-top:10px;
+}
+
+#risorsa{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.boxOver{
+
+    z-index: 10;
+    opacity: 0.9;
+    position:relative; 
+    top: 14px; 
+    left: 0px;
+    margin-bottom: 20px;
+}
+
+.formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    -webkit-box-shadow: 0px 11px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 11px 20px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 1em;
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+
+.logtxt {
+    background-color: $area;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  
+  
+  .logsub {
+      
+    background-color: #3595e4;
+    border: none;
+    color: $background;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 30px 10px 10px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .logsub:hover  {
+    background-color:#5da8e6ee;
+  }
+  
+  .logsub:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  @media only screen and (max-width: 750px) {
+
+    .sala{
+        margin: 0;
+        min-height: fit-content;
+    }
+   
+    .commands {
+        display: block;
+        height: 200px;
+        
+       
+    
+        .btn {
+           
+            margin-bottom:1em;
+           
+            font-size: 1.2em;
+        }
+    }
+
+    .container{
+        margin: 0 3em;
+    }
+
+    #content-side{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        border-radius: 0;
+    }
+}
+
+.lang-btn {
+    padding: 15px;    
+    border: 1px solid green;    
+    font-size: 18px;    
+    margin: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+
+}
+.modifica{
+    text-align: right;
+    padding: 0 1.3em;
+
+    .btn-warning{
+        float: left;
+    }
+
+    .btn{
+        vertical-align: middle;
+        height: 30px;
+        padding: inherit;
+        
+    }
+
+}
+
+
+
+.setH{
+     padding-bottom:1em ;
+     border-bottom:solid 1px;
+}
+
+
+
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 1.5px;
+    left: 1.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $success;
+    
+}
+.sets{
+    margin:1em auto;
+    padding: 2em;
+    width: 95%;
+    min-height:fit-content ;
+
+    
+}
+.form-check-label{
+    width: 100%;
+}
+
+.singleSet{
+
+    padding: 10px 15px;
+    vertical-align: middle;
+    width: 100%;
+    height: 50px;
+    background-color: #e6e8e8;
+    margin: 10px 0;
+}
+
+.input{
+    background-color: #1a62b4;
+    border-color: #1a62b4;
+    font-size: 18px;
+    font-weight: bold;
+
+    float: right;
+}
+
+.formCont{
+    padding: 2em;
+    -webkit-box-shadow: 0px 11px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 7px 20px 0 rgba(0,0,0,.3);
+    min-height: fit-content;
+}
+.form-control{
+    width:300px;
+}
+.descH{
+    margin-bottom: 25px;
+    float: left;
+}
+.desc{
+    float: left;
+    margin: 0 2%;
+}
+
+
+#inputDesc{
+    
+    width:500px;
+    width:500px;
+}
+.accordion{
+   margin: 20px 10px 20px 10px;
+    
+    .card-header{
+        width: 100%;
+        height:50px;
+        vertical-align: middle;
+        background-color: rgba(8, 8, 8, 0.055)!important;
+    }
+    .btn{
+        vertical-align: middle;
+        padding: 0;
+        font-weight: bold;
+    }
+}
+
+
+
+.machSet{
+    width: 90%;
+    margin: 25px auto;
+    height: 35px;
+
+    .machNome{
+        
+        border-right:solid 0.5px ;
+        border-color: #313131ea;
+    }
+    p{
+        font-size: 1.1em;
+    }
+
+    .onOff{
+        border-right:solid 0.5px ;
+        border-color: #313131ea;
+        text-align: center;
+    
+    }
+
+    .applist{
+        text-align: center;
+    }
+}
+
+
+
+.save{
+    float: right;
+    text-align: end;
+}
+
+.saveBtn{
+    background-color: #3595e4;
+    border: none;
+    color: $background;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: fit-content;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px 10px 10px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
