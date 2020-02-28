@@ -2,7 +2,7 @@
   <div class="Home">
       <div class="container">
         <div class="spacer">
-          CANE bat
+          CANE commit
         </div>
       </div>
   </div>
