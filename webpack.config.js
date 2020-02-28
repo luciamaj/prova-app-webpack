@@ -2,13 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GenerateJsonPlugin = require('generate-json-webpack-plugin');
-const FetchJsonWebpackPlugin = require('fetch-json-webpack-plugin');
 const testFolder = './src/assets';
 const fs = require('fs');
 
-fs.readdirSync(testFolder).forEach(function (value, i) {
+/*fs.readdirSync(testFolder).forEach(function (value, i) {
   console.log('%d: %s', i, value);
-});
+});*/
 
 module.exports = {
   entry: './src/main.js',
@@ -68,13 +67,6 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("main.css"), 
-    new FetchJsonWebpackPlugin({
-      endpoints: [
-        {
-          url: 'http://localhost:1337/apps'
-        },
-      ],
-    }),
     new GenerateJsonPlugin('my-file.json',
     { media: 'bar' },
     (key, value) => {

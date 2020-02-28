@@ -1,19 +1,16 @@
 <template>
   <div class="Home">
       <div class="container">
-        <GeneralCommands/>
-        <div class="spacer"></div>
-        <Aree/>
+        <div class="spacer">
+          CANE STRONZO
+        </div>
       </div>
   </div>
 </template>
 <script>
 
-import GeneralCommands from './GeneralCommands.vue'
-import Aree from './Aree.vue'
-
 export default {
-    components: { GeneralCommands, Aree },
+    components: { },
     data () {
         return {
             name: 'Home',
