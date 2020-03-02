@@ -2,7 +2,7 @@
   <div class="Home">
       <div class="container">
         <div class="spacer">
-          CANE commit
+          CANE etto
         </div>
       </div>
   </div>
