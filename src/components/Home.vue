@@ -2,7 +2,7 @@
   <div class="Home">
       <div class="container">
         <div class="spacer">
-          CANE Carlino
+          CANE Carlone
         </div>
       </div>
   </div>
