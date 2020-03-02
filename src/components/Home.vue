@@ -9,7 +9,7 @@
 </template>
 <script>
 
-import { recievedDatiConfig } from './plugins/socket.js'
+import { recievedDatiConfig } from './../plugins/socket.js'
 
 export default {
     components: { },

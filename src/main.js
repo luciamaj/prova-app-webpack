@@ -7,7 +7,6 @@ import 'popper.js';
 import 'jquery';
 import 'bootstrap';
 import { i18n } from './plugins/i18n.js';
-import { socket } from './plugins/socket';
 import CountryFlag from 'vue-country-flag'
 
 Vue.component('country-flag', CountryFlag)
@@ -18,7 +17,6 @@ new Vue({
   el: '#app',
   router,
   i18n,
-  socket,
   CountryFlag,
   template: '<App/>',
   components: { App }
