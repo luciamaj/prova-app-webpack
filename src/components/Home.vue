@@ -9,6 +9,8 @@
 </template>
 <script>
 
+import { recievedDatiConfig } from './plugins/socket.js'
+
 export default {
     components: { },
     data () {
@@ -21,6 +23,14 @@ export default {
       //
     },
     mounted() {
+    },
+    created() {
+      this.datiConfig();
+    },
+    methods: {
+      datiConfig() {
+        recievedDatiConfig();
+      }
     }
   }
 </script>
